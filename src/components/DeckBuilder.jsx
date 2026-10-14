@@ -47,7 +47,7 @@ export default function DeckBuilder({ deck, onAddCard, onRemoveCard, onClearDeck
                 <span className = "card-fix">Q:</span> {card.front}
               </div>
               <div className = "card-row">
-                <span className = "card-fix">A:</span> {card.front}
+                <span className = "card-fix">A:</span> {card.back}
               </div>
             </div>
           
