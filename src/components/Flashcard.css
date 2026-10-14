@@ -51,7 +51,11 @@
 .card-front h1,
 .card-front h2,
 .card-front h3,
-.card-front p {
+.card-front p
+.card-back h1,
+.card-back h2,
+.card-back h3,
+.card-back p {
     color: #090909;
     font-weight: 700;
 }

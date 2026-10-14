@@ -31,13 +31,24 @@
 }
 
 .btn-review {
-    background-color: #fee2e2;
-    color: #991b1b;
+    color: #fee2e2 !important; 
+    background-color: #991b1b !important;
+}
+
+.brn-review:hover{
+    background-color: #fecaca;
 }
 
 .btn-got-it {
-    background-color: #dcfce7;
-    color: #166534;
+    background-color: #dcfce7 !important;
+  
+    color: #000000 !important;
+  
+    border: 1px solid #86efac;
+}
+
+.btn-got-it:hover {
+    background-color: #86efac;
 }
 
 .completion-screen {

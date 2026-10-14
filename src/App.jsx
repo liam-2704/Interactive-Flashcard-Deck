@@ -6,7 +6,7 @@ import DeckBuilder from './components/DeckBuilder';
 
 const emptyDeck = {
   id: "deck-1",
-  title: "My Deck",
+  title: "STUDY WITH FLASHCARDS",
   cards: [],
 }
 /*
@@ -21,7 +21,7 @@ const defaultDeck = {
 };
 */
 export default function App() {
-  const [decks, setDecks] = useLocalStorage('flashcard-decks', [emptyDeck]);
+  const [decks, setDecks] = useLocalStorage('default-decks', [emptyDeck]);
   const [mode, setMode] = useState ('build');
 
   const addCard = (newCard) => {

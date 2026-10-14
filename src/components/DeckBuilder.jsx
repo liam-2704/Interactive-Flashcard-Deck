@@ -19,19 +19,19 @@ export default function DeckBuilder({ deck, onAddCard, onRemoveCard, onClearDeck
       <form onSubmit={handleSubmit} className="builder-form">
         <input 
           type="text" 
-          placeholder="Front (Question)" 
+          placeholder="Question" 
           value={front} 
           onChange={(e) => setFront(e.target.value)} 
           className="input-field"
         />
         <input 
           type="text" 
-          placeholder="Back (Answer)" 
+          placeholder="Answer" 
           value={back} 
           onChange={(e) => setBack(e.target.value)} 
           className="input-field"
         />
-        <button type="submit" className="btn btn-got-it">Add Card</button>
+        <button type="submit" className="btn btn-add-card">Add Card</button>
       </form>
 
       <div className="card-list-header">
@@ -43,8 +43,12 @@ export default function DeckBuilder({ deck, onAddCard, onRemoveCard, onClearDeck
         {deck.cards.map((card) => (
           <li key={card.id} className="card-list-item">
             <div className="card-content">
-              <strong>Q:</strong> {card.front} <br/>
-              <strong>A:</strong> {card.back}
+              <div className = "card-row">
+                <span className = "card-fix">Q:</span> {card.front}
+              </div>
+              <div className = "card-row">
+                <span className = "card-fix">A:</span> {card.front}
+              </div>
             </div>
           
             <button 

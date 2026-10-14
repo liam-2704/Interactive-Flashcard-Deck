@@ -18,7 +18,7 @@
     border: 2px solid #cbd5e1;
     border-radius: 8px;
     font-size: 1rem;
-    color: #0f172a;
+    color: #fdfeff;
 }
 
 .card-list-header {
@@ -45,4 +45,50 @@
     border-radius: 8px;
     font-size: 0.9rem;
     color: #1e293b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+card-content {
+    flex-grow: 1;
+}
+
+.btn-remove-card {
+    background-color: #fee2e2;
+    color: #dc2626;
+    border: 1px solid #f87171;
+    border-radius: 6px;
+    padding: 0.4rem 0.75rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.btn-remove-card:hover {
+    background-color: #fca5a5;
+}
+
+
+.btn-add-card {
+    background-color: rgb(69, 215, 69);
+}
+
+.btn-add-card:hover {
+    background-color: light green;
+}
+
+.card-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.1rem;
+}
+
+.card-fix {
+    font-weight: 700;
+    color: #4f46e5;
+    width: 24px;
+    flex-shrink: 0;
 }
