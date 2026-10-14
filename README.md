@@ -1,16 +1,67 @@
-# React + Vite
+Interactive Flashcard Deck 🧠
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- A front-end React application designed for creating and studying custom flashcards. This project was built in the process of praticing React state management, custom hooks, and CSS 3D animations.
+<br/>
+<br/>
+✨ Features
 
-Currently, two official plugins are available:
+  - Deck Builder Mode: Easily add new cards with custom questions and answers, or remove individual cards you no longer need.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Study Session Mode: Focus on learning one card at a time with a clean UI and progress tracking.
 
-## React Compiler
+- 3D Flip Animations: Smooth, realistic card flipping utilizing CSS preserve-3d and backface-visibility.
+  
+- Local Storage Persistence: All custom cards are saved directly to the browser's localStorage via a custom React hook. You never lose your deck when refreshing or closing the tab.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-  Self-Scoring System: Track your performance with "Need Review" and "Got It" buttons.
+<br/>
+<br/>
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+🛠️ Tech Stack
+
+  - Frontend Framework: React (initialized via Vite for rapid development)
+
+  - Styling: CSS (Responsive, with flexbox layouts and CSS transitions)
+
+  - Data Storage: Browser localStorage (No backend database required)
+<br/>
+<br/>
+
+Follow these instructions to run the project locally on your machine.
+<br/>
+
+- Prerequisites
+
+    - Make sure you have Node.js installed on your computer.
+<br/>
+
+- Installation
+
+  1. Clone this repository
+
+     
+         https://github.com/liam-2704/Interactive-Flashcard-Deck.git
+
+  2. Navigate into the project directory, install the dependencies and run
+
+         cd Interactive-Flashcard-Deck
+
+         npm install
+
+         npm run dev
+
+   3. Click on the port Vite provides you in the terminal
+<br/>
+<br/>
+📖 How to Use
+
+
+  - Build Your Deck: When the app loads, you will start in Build Mode. Type a question in the "Question" input and the answer in the "Answer" input, then click "Add Card".
+
+  - Manage Cards: Review your list of added cards below the form. Click "Remove" on any specific card to delete it, or click "Clear Deck" to delete all cards.
+
+  - Start Studying: Once you have added your cards, click the Study Mode button at the top.
+
+  - Test Your Knowledge: Click on the flashcard to flip it over and reveal the answer. Click "Got It" if you remembered correctly, or "Need Review" if you didn't. At the end of the deck, you'll see your total score!
