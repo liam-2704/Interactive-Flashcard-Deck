@@ -36,8 +36,9 @@
 
 .card-front {
     background-color: white;
-    color: #1e293b;
-    border: 1px solid white;
+    color: #090909;
+    border: 2px solid #cbd5e1;
+    transform: rotateY(0deg);
 }
 
 .card-back {
@@ -45,4 +46,12 @@
     color: #334155;
     border: 1px solid white;
     transform: rotateY(180deg);
+}
+
+.card-front h1,
+.card-front h2,
+.card-front h3,
+.card-front p {
+    color: #090909;
+    font-weight: 700;
 }
